@@ -3,7 +3,7 @@
 
 This project extracts structured JSON data from PDF documents using Azure OpenAI GPT-4o and the LangChain framework. It supports scanned PDFs and multi-page documents by converting pages into images and performing high-precision extraction.
 
----
+
 
 ## Features
 
@@ -14,7 +14,7 @@ This project extracts structured JSON data from PDF documents using Azure OpenAI
 - Maintains formatting, numbers, dates, and units exactly as shown.
 - JSON output only, no extra text or explanations.
 
----
+
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ OPENAI_DEPLOYMENT_NAME=<your_deployment_name>
 
 3. Place the PDF file to extract in the project folder.
 
----
+
 
 ## Usage
 
@@ -92,7 +92,7 @@ python extract_pdf_to_json.py
 - Supports batch processing for multiple pages.
 - Produces final merged JSON.
 
----
+
 
 ## Key Functions
 
@@ -103,7 +103,7 @@ python extract_pdf_to_json.py
 - `build_vision_content(images, instruction)`: Prepare LLM content.
 - `extract_pdf_as_json(pdf_path, fields_json)`: LangChain tool for structured extraction.
 
----
+
 
 ## Notes
 
@@ -111,7 +111,7 @@ python extract_pdf_to_json.py
 - Fields not visible in the document will be `null`.
 - GPT-4o handles image-based PDFs; extraction is based solely on visible text.
 
----
+
 
 ## Example Output
 
@@ -128,13 +128,13 @@ python extract_pdf_to_json.py
 }
 ```
 
----
+
 
 ## License
 
 MIT License
 
----
+
 
 ## Contact
 
